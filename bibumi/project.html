@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>My page title</title>
+        <link rel="stylesheet" href="base.css"> <!--  linking the css and javascript -->
+        <script src="project.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="userName"></h1> <!-- elelment to show the username  -->
+            <button onclick="changeTheme()">Toggle Theme</button> <!-- button to change the current theme  -->
+            <p id="dateAndTime"></p> <!--  where the date and time showing -->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <form> <input type="text" name="user_name" placeholder="Enter your name!" class="input"> <button
+                    type="submit" class="button">Apply!</button> </form> <!-- this is where the input is getting  -->
+        </nav>
+        <main class="main">
+            <div class="intro">
+                <h2>Introduction</h2>
+                <p>The technology industry is exploring the wonders of virtual and augmented reality, as well as how
+                    they are changing the future of our digital and physical experiences. As a result of developments in
+                    technology and software, VR and AR have progressed fast in recent years, making them more accessible
+                    to a larger audience. These technologies have the potential to dramatically change the way we work,
+                    play, learn, and interact with our surroundings.</p>
+            </div>
+            <div>
+                <h2>What is Virtual and Augmented Reality ?</h2>
+                <p>With the help of Virtual reality (VR), users may fully immerse themselves in a digital world as if
+                    they were really there. VR is a revolutionary technology. To create three-dimensional, stereoscopic
+                    pictures, VR mostly uses specialized headgear with one high-resolution display for each eye. Due to
+                    their near proximity to the user's eyes, these displays provide a broad field of vision, giving the
+                    appearance of depth and realism.
+
+                    VR's ability to be interactive and immersive sets it different. The virtual world reacts in
+                    real-time thanks to sensors included into the headset, which continually detect the user's head
+                    motions and location. With the help of this synchronization, users may glance about and explore the
+                    virtual environment just like they would in the real one. By producing 3D sound that shifts
+                    direction when the user turns their head, spatial audio technology further improves immersion.
+
+                    VR applications found in a wide range of industries, including design, education, and healthcare. VR
+                    provides a degree of immersion in video games that plunges gamers right into the action, allowing
+                    them to interact with the setting and characters. By allowing students to tour historical landmarks,
+                    carry out virtual experiments, and even enter complicated scientific ideas, it offers fascinating
+                    and dynamic learning experiences in the classroom.</p>
+            </div>
+
+
+            <!-- buttons to chnage the image and the content  -->
+            <div class="buttons">
+                <button class="button"
+                    onclick="changeContent('headset.jpg', 'Astronaut Raja Chari wears virtual reality goggles to practice rescue scenarios by NASA Johnson is licensed under CC BY-NC-ND 2.0. To view a copy of this license, visit ','https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse')">Headset</button>
+                <!-- onclick the arguments will be passed to the function  -->
+                <button class="button"
+                    onclick="changeContent('gaming.jpg','Razer OSVR Open-Source Virtual Reality for Gaming by pestoverde is licensed under CC BY 2.0. To view a copy of this license, visit-','https://creativecommons.org/licenses/by/2.0/?ref=openverse')">Gaming</button>
+                <button class="button"
+                    onclick="changeContent('medical.jpg', 'Virtual Reality Lab: practicing the SAFER by AstroSamantha is licensed under CC BY 2.0. To view a copy of this license, visit-','https://creativecommons.org/licenses/by/2.0/?ref=openverse')">Healthcare</button>
+                <button class="button"
+                    onclick="changeContent('travel.jpg', 'VR TRAIN by TaylorHerring is licensed under CC BY-NC-ND 2.0. To view a copy of this license, visit-','https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse')">VR
+                    and Tourism</button>
+                <button class="button"
+                    onclick="changeContent('vr_training.jpg', 'Virtual Reality training by Matt Hecht is marked with Public Domain Mark 1.0. To view the terms, visit-','https://creativecommons.org/publicdomain/mark/1.0/?ref=openverse')">VR
+                    in Training and
+                    Simulation</button>
+            </div>
+            <div class="wrapper">
+                <div class="image">
+                    <img id="display-image" src="vr_training.jpg" alt="Default Image" width="500px" height="400px">
+                    <!-- where the image show  -->
+                </div>
+            </div>
+            <div class="text">
+                <p id="content">"Virtual Reality training" by Matt Hecht is marked with Public Domain Mark 1.0. To view
+                    the terms, visit-</p> <!-- copyright of the image  -->
+                <a id="link"
+                    href="https://creativecommons.org/publicdomain/mark/1.0/?ref=openverse">https://creativecommons.org/publicdomain/mark/1.0/?ref=openverse</a>
+            </div>
+            <p>Modern technology known as Augmented reality (AR) enhances our understanding of the actual world by
+                overlapping digital data and virtual objects over our field of vision. When using smartphones, tablets,
+                or specialized AR glasses, which use cameras and sensors to identify their surroundings and overlay
+                digital objects on them.
+
+                The core idea of augmented reality is to deliver timely, relevant information. For instance, if you aim
+                your smartphone towards a historical landmark using an AR app, the screen can provide historical details
+                and tales about the monument. Alternatively, in a store setting, augmented reality (AR) enables you to
+                visually try on clothes or see how furniture would fit in your house.
+
+                One of the most well-known applications of AR is the mobile game Pokémon Go, which introduced digital
+                characters into the real world and sparked a worldwide craze. But AR goes well beyond gaming,
+                demonstrating its adaptability in maintenance, education, and healthcare. In the educational setting,
+                augmented reality (AR) turns conventional textbooks and learning materials into interactive experiences
+                that make subjects more interesting and understandable. Medical experts employ augmented reality (AR)
+                for surgeries and diagnostics, while maintenance personnel may use enhanced instructions to make
+                difficult jobs simpler.</p>
+
+            <h2>Application work VR and AR</h2>
+            <p>Virtual reality (VR) rhythm game called Beat Sabre was created by Beat Games. It provides a
+                straightforward yet incredibly physically demanding and physically addicting game experience. Players of
+                Beat Sabre put on a VR headset and use two virtual lightsabers. The goal is to slice these coloured
+                blocks with the appropriate sabre (blue for the left hand, red for the right) in the direction given
+                while simultaneously evading obstacles as they rhythmically approach the player in time with the beat of
+                the music. The game's genius resides in its simple gameplay, which makes it usable by players of all
+                ability levels. There is something for everyone in Beat Saber's enormous music collection, which
+                includes a wide variety of genres and allows users to contribute their own tunes. Players may compete
+                for top scores on leader-boards, giving the experience a competitive aspect. The intensity of the game
+                offers an amazing exercise while still being immensely fun. Beat Sabre, which offers a wide variety of
+                personalisation possibilities, has won over VR aficionados and continues to highlight the technology's
+                potential for producing exhilarating and captivating gaming experiences.
+
+                A smartphone augmented reality (AR) game called Pokemon Go was created and released by Niantic in
+                association with Nintendo and The Pokemon Company. When it was released in July 2016, it immediately
+                spread around the world, fusing the adored Pokemon universe with smartphone and augmented reality (AR)
+                exploration.
+                In order to find and catch virtual Pokemon species, users must first explore their real-world
+                surroundings in Pokemon Go. The game creates an augmented reality experience using the GPS and camera of
+                the smartphone. Different Pokemon species display on users' screens as they walk around in the real
+                world, superimposed onto the setting using the phone's camera. Players must physically travel to the
+                places where these species are present, such as parks, landmarks, and other sites of interest, in order
+                to catch them. By building a feeling of community through elements like team-based gaming and
+                collaborative activities, the game promotes social engagement.
+                Millions of gamers have been inspired by Pokemon Go to explore their neighbourhood, public areas, and
+                monuments in pursuit of Pokemon, which has had a tremendous influence on mobile gaming. It stimulates
+                outdoor exploration and physical exertion, fostering a fit and active lifestyle. Players are interested
+                and enthusiastic about new features and content thanks to the game's frequent updates and events.</p>
+        </main>
+        <footer>
+            <p>©Copyright 2050 by nobody. All rights reversed.</p>
+        </footer>
+
+
+
+        <script>
+            const dateTimeElement = document.getElementById('dateAndTime');     //getting the element
+            function displayDateTime() {
+                //function to fetch the current date and time
+                const currentDate = new Date();         //getting the current date and time
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', };
+                dateTimeElement.textContent = currentDate.toLocaleDateString(undefined, options);       //to the elelment passing the date and time
+            }
+            displayDateTime();          //calling the function on every refreshes
+
+            function displayUserName() {                //function to display username
+                const userName = document.getElementById("userName")
+
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);     //getting the url
+                if (urlParams.has('user_name')) {   //checking the url has username or not
+                    const username = urlParams.get('user_name')         //assigning the username to a variable
+                    if (username.length !== 0) {                //condition to check the username null or not
+                        userName.textContent = "Hello " + username          //if not null then passing to the element
+                        localStorage.setItem("username", username)         //storing in the localstorage
+                    } else {
+                        userName.textContent = "Hello Guest"    //if the length is zero showing a guest message
+                    }
+
+                } else {        //if urlparams dont have the username we will check in the local storage
+                    username = localStorage.getItem("username")         //getting from the local storage
+                    if (username) {
+                        userName.textContent = "Hello " + username
+                    } else {
+                        userName.textContent = "Hello Guest"
+                    }
+                }
+
+
+            }
+            displayUserName()           //calling the function on every reload
+
+            function defaultTheme() {           //function to check in the local storage for any theme records
+                changedTheme = localStorage.getItem("theme")
+                document.documentElement.setAttribute("data-theme", changedTheme);
+            }
+            defaultTheme()
+        </script>
+    </body>
+
+</html>
